@@ -1,0 +1,58 @@
+{% load static %}
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            <img src="{% static 'images/navlogo.png' %}" alt="">
+        </div>
+
+        <div class="col-sm-4 mt-4">
+            <div class="nav-head">
+                <span class="text-danger ">Online</span>
+                <span class="text-success">Job Portal</span>
+            </div>
+        </div>
+
+        <div class="col-sm-4  mt-4 ">
+            <div class="social-icon-nav">
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-linkedin"></i></a>
+                <a href=""><i class="fa fa-instagram"></i></a>
+                <a href=""><i class="fa fa-telegram"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<nav class="navbar navbar-expand-sm">
+    <a href="" class="navbar-brand text-white pl-5">Job Portal</a>
+
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item ">
+            <a class="nav-link" href="{% url 'index' %}"> <i class="fa fa-home mr-1"></i> Home</a>
+        </li>
+
+        <li class="nav-item ">
+            <a class="nav-link" href="{% url 'index' %}"> <i class="fa fa-users mr-1"></i> Latest Jobs</a>
+        </li>
+
+        <li class="nav-item ">
+            <a class="nav-link" href="{% url 'index' %}"> <i class="fa fa-sign-in mr-1"></i> Contact</a>
+        </li>
+
+        <li class="nav-item ">
+            <a class="nav-link" href="{% url 'user_login' %}"> <i class="fa fa-user-plus mr-1"></i> User Login</a>
+        </li>
+
+        <li class="nav-item ">
+            <a class="nav-link" href="{% url 'recruiter_login' %}"> <i class="fa fa-sign-language mr-1"></i> Recruiter Login</a>
+        </li>
+
+        <li class="nav-item ">
+            <a class="nav-link" href="{% url 'admin_login' %}"> <i class="fa fa-sign-in mr-1"></i> Admin Login</a>
+        </li>
+
+    </ul>
+</nav>

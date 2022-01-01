@@ -1,0 +1,39 @@
+{% load static %}
+
+<style>
+    footer {
+        background-color: #0f0e0e;
+        margin-top: 14px;
+    }
+</style>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mt-3">
+                <h5 class="py-2">Contact Information</h5>
+                <p><i class="fa fa-map-marker mr-1"></i>Dhanmondi, Dhaka, Road 1455</p>
+                <p><i class="fa fa-google mr-1"></i>online.job@gmail.com</p>
+                <p><i class="fa fa-phone mr-1"></i>P: +81 365455431</p>
+                <p><i class="fa fa-globe mr-1"></i>W: www.onlinejobs.com</p>
+            </div>
+
+            <div class="col-md-4 mt-3">
+                <h5 class="py-2">Online Placement</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio obcaecati sit ratione? Quibusdam, nostrum non.</p>
+            </div>
+
+            <div class="col-md-4 mt-3">
+                <h5 class="py-2">News Letter</h5>
+                <p>If you want any extra information then send your email ID</p>
+
+                <form action="" method="post" class="form-inline">
+                    {% csrf_token %}
+                    <input type="email" name="emailid" placeholder="Email ID" required class="form-control mr-3">
+
+                    <input type="submit" value="Send" class="btn btn-primary">
+                </form>
+            </div>
+        </div>
+    </div>
+</footer>

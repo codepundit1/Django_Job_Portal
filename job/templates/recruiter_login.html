@@ -1,0 +1,30 @@
+{% extends "main.html" %} {% load static %} {% block body %}
+
+<style>
+    marquee {
+        font-family: 'Manrope', sans-serif;
+        margin-top: 14px;
+        font-weight: 700;
+        background-color: #ffebcd83;
+        padding: 8px;
+        color: black;
+        letter-spacing: 1.35px;
+    }
+</style>
+
+<marquee behavior="" direction="">Recruiter Login</marquee>
+<hr>
+<form class="container mt-5" action="post">
+    {% csrf_token %}
+    <label for=""><b>Username</b></label>
+    <input type="text" class="form-control mb-3" name="uname" placeholder="Enter Username">
+
+    <label for=""><b>Password</b></label>
+    <input type="password" class="form-control mb-3" name="pwd" placeholder="Enter Password">
+
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+
+</form>
+
+{% endblock %}

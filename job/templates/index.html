@@ -1,0 +1,97 @@
+{% extends "main.html" %} {% load static %} {% block body %}
+
+<style>
+    .placed-students {
+        max-width: 90%;
+        background-color: black;
+    }
+    
+    .placed-students .placed-students-img {
+        width: 200px;
+        margin-top: 5%;
+        height: 200px;
+    }
+    
+    .placed-students .content {
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        height: 40px;
+        width: 65%;
+        background: rgba(0, 0, 0, 0.7);
+    }
+</style>
+
+<div class="container-fluid">
+    <div class="row mt-1">
+        <img src="{% static 'images/hire1.jpg' %}" class="img-fluid hero-img" alt="">
+    </div>
+</div>
+
+
+<div class="container placed-students  mt-4">
+
+    <h4 class="text-white text-center">----------| OUR PLACED STUDENTS |----------</h4>
+
+
+    <div class="row mt-3">
+        <div class="col-md-3">
+            <img src="{% static 'images/hire1.jpg' %}" class="img-fluid rounded-circle placed-students-img" alt="">
+            <div class="content text-white">
+                <h5>Facebook</h5>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <img src="{% static 'images/hire1.jpg' %}" class="img-fluid rounded-circle placed-students-img" alt="">
+            <div class="content text-white">
+                <h5>Amazon</h5>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <img src="{% static 'images/hire1.jpg' %}" class="img-fluid rounded-circle placed-students-img" alt="">
+            <div class="content text-white">
+                <h5>Google</h5>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <img src="{% static 'images/hire1.jpg' %}" class="img-fluid rounded-circle placed-students-img" alt="">
+            <div class="content text-white">
+                <h5>Youtube</h5>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-3">
+        <div class="col-md-3">
+            <img src="{% static 'images/hire1.jpg' %}" class="img-fluid rounded-circle placed-students-img" alt="">
+            <div class="content text-white">
+                <h5>Facebook</h5>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <img src="{% static 'images/hire1.jpg' %}" class="img-fluid rounded-circle placed-students-img" alt="">
+            <div class="content text-white">
+                <h5>Amazon</h5>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <img src="{% static 'images/hire1.jpg' %}" class="img-fluid rounded-circle placed-students-img" alt="">
+            <div class="content text-white">
+                <h5>Google</h5>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <img src="{% static 'images/hire1.jpg' %}" class="img-fluid rounded-circle placed-students-img" alt="">
+            <div class="content text-white">
+                <h5>Youtube</h5>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
